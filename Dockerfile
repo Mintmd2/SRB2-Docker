@@ -7,8 +7,8 @@ RUN export LIBGME_CFLAGS= \
     && export LIBGME_LDFLAGS=-lgme
 RUN git clone https://git.do.srb2.org/STJr/SRB2.git
 WORKDIR /SRB2
-RUN git checkout master
-RUN make
+RUN git checkout master \
+    && make
 
 # Setup volumes
 VOLUME /config
