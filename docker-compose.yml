@@ -1,0 +1,11 @@
+version: '3'
+services:
+  srb2:
+    build: .
+    container_name: srb2
+    ports:
+        - "5029:5029/udp"
+    volumes:
+      - "./config:/config"
+      - "./addons:/addons"
+      - "./config/adedserv.cfg:/data/.srb2/adedserv.cfg"
