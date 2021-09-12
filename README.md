@@ -1,8 +1,8 @@
 # srb2
 
-Docker container for running a Sonic Robo Blast 2 dedicated server.
+Docker-compose for running a Sonic Robo Blast 2 dedicated server.
 
-**NOTE - I am pretty inexperienced with Dockerfile so it likely isn't using best practices. Though it works great for me, use at your own risk.**
+*NOTE - I am pretty inexperienced with Dockerfile so it likely isn't using best practices. Though it works great for me, use at your own risk.*
 
 ## Usage
 
@@ -18,8 +18,7 @@ In order to configure server variables, bind the `/config` volume to a host dire
 
 #### Addons
 
-In order to load addons, place them in the addon directory. The server should load them automatically the next time the container is created.
-
+In order to load addons, bind the `/addons` volume to a host directory. The server should load them automatically the next time the container is created.
 
 ## Credit
 
