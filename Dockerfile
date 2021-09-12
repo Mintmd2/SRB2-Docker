@@ -2,10 +2,8 @@ FROM ubuntu:20.10
 
 # Install required software and srb2kart
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt update && apt install -y software-properties-common build-essential libpng-dev zlib1g-dev libsdl2-dev libsdl2-mixer-dev libgme-dev libopenmpt-dev libcurl4-openssl-dev nasm git pkg-config
-RUN export LIBGME_CFLAGS= \
-    && export LIBGME_LDFLAGS=-lgme
-RUN git clone https://git.do.srb2.org/STJr/SRB2.git
+RUN apt update && apt install -y software-properties-common build-essential libpng-dev zlib1g-dev libsdl2-dev libsdl2-mixer-dev libgme-dev libopenmpt-dev libcurl4-openssl-dev nasm git pkg-config \
+    && git clone https://git.do.srb2.org/STJr/SRB2.git
 WORKDIR /SRB2
 RUN git checkout master \
     && make
