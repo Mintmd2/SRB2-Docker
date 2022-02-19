@@ -4,7 +4,7 @@ services:
     build: .
     container_name: srb2
     ports:
-        - "5029:5029/udp"
+      - "5029:5029/udp"
     volumes:
       - "./config:/config"
       - "./addons:/addons"
