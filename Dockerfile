@@ -1,4 +1,4 @@
-FROM ubuntu:20.10
+FROM ubuntu:21.04
 
 # Install required software and srb2kart
 ARG DEBIAN_FRONTEND=noninteractive
