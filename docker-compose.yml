@@ -7,5 +7,5 @@ services:
       - "5029:5029/udp"
     volumes:
       - "./config:/config"
-      - "./addons:/addons"
-      - "./adedserv.cfg:/data/.srb2/adedserv.cfg"
+      - "./addons:/addons"    # OPTIONAL - For addons and mods
+      - "./adedserv.cfg:/data/.srb2/adedserv.cfg"   # OPTIONAL - For configuring server variables. REMINDER - BE SURE TO CREATE THE .CFG FILE BEFORE RUNNING THE CONTAINER
