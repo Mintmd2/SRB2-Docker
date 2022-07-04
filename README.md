@@ -10,7 +10,7 @@ I prefer to use docker-compose, so I've included the docker-compose.yml file. Ed
 
 #### Requirements
 
-This container *requires* **models.dat**, **player.dta**, **srb2.pk3** and **zones.pk3** in the same directory as the Dockerfile. These can simply be copied over from an already existing installion of SRB2.
+This container *requires* **player.dta**, **srb2.pk3** and **zones.pk3** in the same directory as the Dockerfile. These can simply be copied over from an already existing installion of SRB2.
 
 ### Advanced
 
