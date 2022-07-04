@@ -1,6 +1,6 @@
 FROM ubuntu:21.04
 
-# Install required software and srb2kart
+# Install required software and srb2
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -y software-properties-common build-essential libpng-dev zlib1g-dev libsdl2-dev libsdl2-mixer-dev libgme-dev libopenmpt-dev libcurl4-openssl-dev nasm git pkg-config \
     && git clone https://git.do.srb2.org/STJr/SRB2.git
