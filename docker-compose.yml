@@ -8,4 +8,4 @@ services:
     volumes:
       - "./config:/config"
       - "./addons:/addons"
-      - "./config/adedserv.cfg:/data/.srb2/adedserv.cfg"
+      - "./adedserv.cfg:/data/.srb2/adedserv.cfg"
