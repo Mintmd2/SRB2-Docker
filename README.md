@@ -23,7 +23,8 @@ This container *requires* **player.dta**, **srb2.pk3** and **zones.pk3** in the 
 
 #### Configuration
 
-In order to configure server variables, bind the `/config` volume to a host directory, create `adedserv.cfg`, and edit it. Documentation [here](https://wiki.srb2.org/wiki/Console/Variables#Server_options).
+For the server to save configuration data, bind the `/config` volume to a host directory.\
+In order to configure server variables, create `adedserv.cfg`, and edit it. Documentation [here](https://wiki.srb2.org/wiki/Console/Variables#Server_options) at the SRB2 Wiki.
 
 #### Addons
 
