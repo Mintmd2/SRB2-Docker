@@ -13,7 +13,7 @@ I prefer to use docker-compose, so I've included the docker-compose.yml file. He
 3. ```nano docker-compose.yml``` Edit this file to your liking - i.e. addons, server config...
 4. ```docker-compose up -d```
 
-The container should be built, and you'll be left with the stack 'SRB2' running in Docker. The console output will give you any and all important info regarding your dedicated server.
+Wait for the container to be built, and you'll be left with the stack 'SRB2' running in Docker. The console output will give you any and all important info regarding your dedicated server.
 
 #### Requirements
 
