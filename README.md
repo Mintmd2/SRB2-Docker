@@ -6,7 +6,14 @@ Docker-compose for running a Sonic Robo Blast 2 dedicated server.
 
 ### Basic
 
-I prefer to use docker-compose, so I've included the docker-compose.yml file. Edit this file to your liking, then 'cd' into the directory and use 'docker-compose up -d'. The container should be built, and you'll be left with the stack 'SRB2' running in Docker. The console output will give you any and all important info regarding your dedicated server.
+I prefer to use docker-compose, so I've included the docker-compose.yml file. Here is an example of how to run this container:
+
+1. ```git clone https://github.com/ebears/srb2-docker.git```
+2. ```cd srb2-docker```
+3. ```nano docker-compose.yml``` Edit this file to your liking - i.e. addons, server config...
+4. ```docker-compose up -d```
+
+The container should be built, and you'll be left with the stack 'SRB2' running in Docker. The console output will give you any and all important info regarding your dedicated server.
 
 #### Requirements
 
