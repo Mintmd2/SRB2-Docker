@@ -5,7 +5,6 @@ services:
     ports:
       - "5029:5029/udp"
     volumes:
-      - "./config:/config"
-      - "./addons:/addons"    # OPTIONAL - For addons and mods
-      - "./logs:/logs"    # Just Logs
-      - "./adedserv.cfg:/data/.srb2/adedserv.cfg"   # OPTIONAL - For configuring server variables. REMINDER - BE SURE TO CREATE THE .CFG FILE BEFORE RUNNING THE CONTAINER
+      - "./config:/root/.srb2/config"
+      - "./addons:/root/.srb2/addons"    # OPTIONAL - For addons and mods
+      - "./adedserv.cfg:/root/.srb2/adedserv.cfg"   # OPTIONAL - For configuring server variables. REMINDER - BE SURE TO CREATE THE .CFG FILE BEFORE RUNNING THE CONTAINER

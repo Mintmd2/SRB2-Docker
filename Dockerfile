@@ -10,17 +10,12 @@ RUN git checkout master && make -j$(nproc) LINUX64=1 NOHW=1
 VOLUME /config
 VOLUME /addons
 VOLUME /data
-VOLUME /logs
 
 # Symlink for config
 RUN ln -sf /config/adedserv.cfg && ln -sf /addons /SRB2/bin/addons
 
 # Expose network port
 EXPOSE 5029/udp
-
-# Copy bash script and fix execute permission
-COPY srb2.sh  /SRB2/bin/
-RUN chmod a+x  /SRB2/bin/srb2.sh
 
 COPY srb2.pk3  \
     #patch.pk3  \
@@ -31,11 +26,10 @@ COPY srb2.pk3  \
      characters.pk3 \
      /SRB2/bin/
 
-
 # Set working directory
 WORKDIR /SRB2/bin
 
 STOPSIGNAL SIGINT
 
 # Run script
-CMD ["/SRB2/bin/lsdl2srb2", "-dedicated"]
+ENTRYPOINT ["/SRB2/bin/lsdl2srb2", "-dedicated"]
