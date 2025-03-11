@@ -29,4 +29,4 @@ In order to configure server variables, edit the included `adedserv.cfg` file. R
 
 #### Addons
 
-In order to load addons, bind the `/addons` volume to a host directory. The server should load them automatically the next time the container is created.
+In order to load addons, bind the `/addons` volume to a host directory.
