@@ -1,6 +1,5 @@
+### THIS PROJECT IS STILL IN DEVELOPEMENT!
 # SRB2-Docker
-
-## THIS PROJECT IS STILL IN DEVELOPEMENT!
 
 Docker compose for running a Sonic Robo Blast 2 dedicated server.
 
