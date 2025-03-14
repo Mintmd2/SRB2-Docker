@@ -18,7 +18,7 @@ Wait for the container to be built, and you'll be left with the stack 'SRB2' run
 
 #### Requirements
 
-This container *requires* **music.pk3**, **characters.pk3**, **srb2.pk3** and **zones.pk3** in the same directory as the Dockerfile. These can simply be copied over from an already existing installion of SRB2.
+This container *requires* **music.pk3**, **characters.pk3**, **srb2.pk3** and **zones.pk3** in the same directory as the Dockerfile. These can simply be copied over from an already existing installation of SRB2.
 
 ### Advanced
 
